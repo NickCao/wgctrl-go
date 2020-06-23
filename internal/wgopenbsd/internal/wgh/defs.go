@@ -41,21 +41,29 @@ type Timespec C.struct_timespec
 
 // WireGuard types and constants.
 
+type WGAIPIO C.struct_wg_aip_io
+
+type WGDataIO C.struct_wg_data_io
+
+type WGInterfaceIO C.struct_wg_interface_io
+
+type WGPeerIO C.struct_wg_peer_io
+
 const (
-	SIOCGWGSERV = C.SIOCGWGSERV
-	SIOCGWGPEER = C.SIOCGWGPEER
+	SIOCGWG = C.SIOCGWG
 
-	SizeofWGIP = C.sizeof_union_wg_ip
+	WG_INTERFACE_HAS_PUBLIC    = C.WG_INTERFACE_HAS_PUBLIC
+	WG_INTERFACE_HAS_PRIVATE   = C.WG_INTERFACE_HAS_PRIVATE
+	WG_INTERFACE_HAS_PORT      = C.WG_INTERFACE_HAS_PORT
+	WG_INTERFACE_HAS_RTABLE    = C.WG_INTERFACE_HAS_RTABLE
+	WG_INTERFACE_REPLACE_PEERS = C.WG_INTERFACE_REPLACE_PEERS
 
-	WGStateNoSession = C.WG_STATE_NO_SESSION
-	WGStateInitiator = C.WG_STATE_INITIATOR
-	WGStateResponder = C.WG_STATE_RESPONDER
+	WG_PEER_HAS_PUBLIC   = C.WG_INTERFACE_HAS_PUBLIC
+	WG_PEER_HAS_PSK      = C.WG_PEER_HAS_PSK
+	WG_PEER_HAS_PKA      = C.WG_PEER_HAS_PKA
+	WG_PEER_HAS_ENDPOINT = C.WG_PEER_HAS_ENDPOINT
+
+	SizeofWGAIPIO       = C.sizeof_struct_wg_aip_io
+	SizeofWGInterfaceIO = C.sizeof_struct_wg_interface_io
+	SizeofWGPeerIO      = C.sizeof_struct_wg_peer_io
 )
-
-type WGGetServ C.struct_wg_get_serv
-
-type WGGetPeer C.struct_wg_get_peer
-
-type WGIP C.union_wg_ip
-
-type WGCIDR C.struct_wg_cidr
