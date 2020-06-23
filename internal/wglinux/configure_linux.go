@@ -31,6 +31,18 @@ func configAttrs(name string, cfg wgtypes.Config) ([]byte, error) {
 		ae.Uint16(wgh.DeviceAListenPort, uint16(*cfg.ListenPort))
 	}
 
+	if cfg.BindAddress != nil {
+		if cfg.BindAddress.To4() != nil {
+			var addr [16]byte
+			copy(addr[4:8], cfg.BindAddress)
+			ae.Bytes(wgh.DeviceABindAddr, addr[:])
+		} else {
+			var addr [28]byte
+			copy(addr[8:24], cfg.BindAddress)
+			ae.Bytes(wgh.DeviceABindAddr, addr[:])
+		}
+	}
+
 	if cfg.FirewallMark != nil {
 		ae.Uint32(wgh.DeviceAFwmark, uint32(*cfg.FirewallMark))
 	}

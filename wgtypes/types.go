@@ -52,6 +52,9 @@ type Device struct {
 	// ListenPort is the device's network listening port.
 	ListenPort int
 
+	// BindAddress is the device's network binding address.
+	BindAddress net.IP
+
 	// FirewallMark is the device's current firewall mark.
 	//
 	// The firewall mark can be used in conjunction with firewall software to
@@ -218,6 +221,9 @@ type Config struct {
 
 	// ListenPort specifies a device's listening port, if not nil.
 	ListenPort *int
+
+	// BindAddress is the device's network binding address, if not nil.
+	BindAddress net.IP
 
 	// FirewallMark specifies a device's firewall mark, if not nil.
 	//

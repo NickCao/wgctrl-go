@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="99222c31-f353-48c1-9e7c-f9c745fbb6d7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/cmd/wgctrl/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/wgctrl/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/wglinux/configure_linux.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/wglinux/configure_linux.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/wglinux/internal/wgh/const.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/wglinux/internal/wgh/const.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/wglinux/internal/wgh/doc.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/wglinux/internal/wgh/doc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/wglinux/parse_linux.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/wglinux/parse_linux.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wgtypes/types.go" beforeDir="false" afterPath="$PROJECT_DIR$/wgtypes/types.go" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="GOROOT" path="/usr/lib/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="ProjectId" id="1dhy49ZAHX9WRpn9Usv4Y2SfJK9" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="755" y="392" width="400" height="333" key="#Go_Modules" timestamp="1592891729785">
+      <screen x="0" y="32" width="1920" height="1048" />
+    </state>
+    <state x="755" y="392" width="400" height="333" key="#Go_Modules/0.32.1920.1048@0.32.1920.1048" timestamp="1592891729785" />
+  </component>
+</project>

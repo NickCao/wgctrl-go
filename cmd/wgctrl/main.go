@@ -51,6 +51,7 @@ func printDevice(d *wgtypes.Device) {
   public key: %s
   private key: (hidden)
   listening port: %d
+  bind address: %s
 
 `
 
@@ -59,7 +60,7 @@ func printDevice(d *wgtypes.Device) {
 		d.Name,
 		d.Type.String(),
 		d.PublicKey.String(),
-		d.ListenPort)
+		d.ListenPort, d.BindAddress)
 }
 
 func printPeer(p wgtypes.Peer) {

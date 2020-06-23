@@ -73,6 +73,13 @@ func parseDeviceLoop(m genetlink.Message) (*wgtypes.Device, error) {
 			ad.Do(parseKey(&d.PublicKey))
 		case wgh.DeviceAListenPort:
 			d.ListenPort = int(ad.Uint16())
+		case wgh.DeviceABindAddr:
+			switch len(ad.Bytes()) {
+			case 16:
+				d.BindAddress = ad.Bytes()[4:8]
+			case 28:
+				d.BindAddress = ad.Bytes()[8:24]
+			}
 		case wgh.DeviceAFwmark:
 			d.FirewallMark = int(ad.Uint32())
 		case wgh.DeviceAPeers:
