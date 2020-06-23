@@ -32,15 +32,15 @@ func configAttrs(name string, cfg wgtypes.Config) ([]byte, error) {
 	}
 
 	if cfg.BindAddress != nil {
-		if cfg.BindAddress.To4() != nil {
-			var addr [16]byte
-			copy(addr[4:8], cfg.BindAddress)
-			ae.Bytes(wgh.DeviceABindAddr, addr[:])
-		} else {
-			var addr [28]byte
-			copy(addr[8:24], cfg.BindAddress)
-			ae.Bytes(wgh.DeviceABindAddr, addr[:])
+		sa, err := sockaddrBytes(net.UDPAddr{
+			IP:   cfg.BindAddress,
+			Port: 0,
+			Zone: "",
+		})
+		if err != nil{
+			return nil, err
 		}
+		ae.Bytes(wgh.DeviceABindAddr, sa)
 	}
 
 	if cfg.FirewallMark != nil {
