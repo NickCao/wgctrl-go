@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="99222c31-f353-48c1-9e7c-f9c745fbb6d7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmd/wgctrl/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/wgctrl/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/wglinux/configure_linux.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/wglinux/configure_linux.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/wglinux/internal/wgh/const.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/wglinux/internal/wgh/const.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/wglinux/parse_linux.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/wglinux/parse_linux.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +27,7 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../RAIT" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -41,9 +37,9 @@
       <screen x="0" y="32" width="1920" height="1048" />
     </state>
     <state x="755" y="392" width="400" height="333" key="#Go_Modules/0.32.1920.1048@0.32.1920.1048" timestamp="1592891729785" />
-    <state x="743" y="314" width="424" height="490" key="FileChooserDialogImpl" timestamp="1592894062831">
+    <state x="743" y="314" width="424" height="490" key="FileChooserDialogImpl" timestamp="1593052202134">
       <screen x="0" y="32" width="1920" height="1048" />
     </state>
-    <state x="743" y="314" width="424" height="490" key="FileChooserDialogImpl/0.32.1920.1048@0.32.1920.1048" timestamp="1592894062831" />
+    <state x="743" y="314" width="424" height="490" key="FileChooserDialogImpl/0.32.1920.1048@0.32.1920.1048" timestamp="1593052202134" />
   </component>
 </project>
